@@ -9,7 +9,7 @@
             <p class="date">
                 Publicado em {{ post.created }} por {{ post.author }}
             </p>
-            {{ post.body|linebreaks|Truncatewords:10 }}
+            {{ post.body|linebreaks|truncatewords:10 }}
         </article>
     {% endfor %}
 {% endblock %}
